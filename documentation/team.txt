@@ -1,0 +1,22 @@
+// Get All Team 
+curl --location 'http://localhost:8080/api/team?limit=1&page=3'
+
+// Get Detail Team
+curl --location 'http://localhost:8080/api/team/{id}'
+
+// Create Team
+curl --location 'http://localhost:8080/api/team' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name_team" : "testing 2"
+}'
+
+// Update Team
+curl --location --request PUT 'http://localhost:8080/api/team/{id}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name_team" : "testing 3"
+}'
+
+// Delete Team
+curl --location --request DELETE 'http://localhost:8080/api/team/{id}'

@@ -1,0 +1,22 @@
+// Get All Player 
+curl --location 'http://localhost:8080/api/player?limit=10&page=1'
+
+// Get Detail Player
+curl --location 'http://localhost:8080/api/player/{id}'
+
+// Create Player
+curl --location 'http://localhost:8080/api/player' \
+--data '{
+    "name" : "testing player 10",
+    "team_id" : 1
+}'
+
+// Update Player
+curl --location --request PUT 'http://localhost:8080/api/team/{id}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name_team" : "testing 3"
+}'
+
+// Delete Player
+curl --location --request DELETE 'http://localhost:8080/api/players/{id}'
