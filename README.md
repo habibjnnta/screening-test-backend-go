@@ -23,3 +23,9 @@ You want to publish a soccer API that can give a list of soccer players in a tea
 - API response in json format.
 - We want you to make this API as easy as possible to start. No hassle when we try to running your code.
 - Don’t forget to make documentation
+
+## Run Code
+
+- Create database with name : screening-test-backend-habib
+- go mod tidy
+- go run main.go / go run .
